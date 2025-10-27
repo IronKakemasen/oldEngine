@@ -1,0 +1,864 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ExclusiveCodes\Audio\AudioHandle.cpp" />
+    <ClCompile Include="ExclusiveCodes\Audio\AudioManager.cpp" />
+    <ClCompile Include="ExclusiveCodes\Audio\AudioPlayer.cpp" />
+    <ClCompile Include="ExclusiveCodes\Characters\CharacterBehavior.cpp" />
+    <ClCompile Include="ExclusiveCodes\GameObjects\Goal\Goal.cpp" />
+    <ClCompile Include="ExclusiveCodes\Characters\GoalCharacter\GoalCharacter.cpp" />
+    <ClCompile Include="ExclusiveCodes\Characters\NormalBlockCharacter\NormalBlockCharacter.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Chip\ChipBehavior.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Chip\NormalBlock\NormalBlock.cpp" />
+    <ClCompile Include="ExclusiveCodes\Audio\MediaAudioDecoder.cpp" />
+    <ClCompile Include="ExclusiveCodes\GameObjects\MovableBlock\MovableBlock.cpp" />
+    <ClCompile Include="ExclusiveCodes\InGameController\InGameController.cpp" />
+    <ClCompile Include="ExclusiveCodes\Scenes\GameScene\GameScene.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map0\Map0.cpp" />
+    <ClCompile Include="MyLib\Utilities\CubeForModelStructures\CubeForModel.cpp" />
+    <ClCompile Include="MyLib\Utilities\CatmullStructures\CatmullSample.cpp" />
+    <ClCompile Include="MyLib\Utilities\SceneStructures\DebugScene\DebugScene.cpp" />
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Cube\DisjointedCube\DisjointedCube.cpp" />
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Cube\JointedCube\JointedCube.cpp" />
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Cube\CubeBehavior.cpp" />
+    <ClCompile Include="External\imgui\imgui.cpp" />
+    <ClCompile Include="External\imgui\imgui_demo.cpp" />
+    <ClCompile Include="External\imgui\imgui_draw.cpp" />
+    <ClCompile Include="External\imgui\imgui_impl_dx12.cpp" />
+    <ClCompile Include="External\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="External\imgui\imgui_tables.cpp" />
+    <ClCompile Include="External\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="MyLib\Utilities\SceneStructures\DebugScene\DebugSceneAssets.cpp" />
+    <ClCompile Include="MyLib\EngineCore\FPSControll\FPSController.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\BaseClass.cpp" />
+    <ClCompile Include="MyLib\Utilities\BenriFunctionStructures\BenriFunctions.cpp" />
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\Material\Material.cpp" />
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\Physic\Physics.cpp" />
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\PrimitiveShape\PrimitiveShape.cpp" />
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\Quaternion\Quaternion.cpp" />
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\Segment\Segment.cpp" />
+    <ClCompile Include="MyLib\Utilities\CounterStructures\CounterAndTime.cpp" />
+    <ClCompile Include="MyLib\Utilities\CounterStructures\TimedCall.cpp" />
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\Transform\Transform.cpp" />
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\VectorAndMatrix\VectorAndMatrix.cpp" />
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\VertexData\VertexData.cpp" />
+    <ClCompile Include="MyLib\Utilities\CameraStructures\CameraBehavior.cpp" />
+    <ClCompile Include="MyLib\Utilities\CameraStructures\DebugCameraInstances.cpp" />
+    <ClCompile Include="MyLib\Utilities\CameraStructures\SimpleDebugCamera.cpp" />
+    <ClCompile Include="MyLib\Utilities\CameraStructures\SphericalDebugCamera.cpp" />
+    <ClCompile Include="MyLib\Utilities\CatmullStructures\CatmullBehavior.cpp" />
+    <ClCompile Include="MyLib\Utilities\CollisionDetectionsStructures\CollisionDetection.cpp" />
+    <ClCompile Include="MyLib\Utilities\DebugUIStructures\DebugUI.cpp" />
+    <ClCompile Include="MyLib\EngineCore\EngineInstances\EngineAssets.cpp" />
+    <ClCompile Include="MyLib\Utilities\EssentialInstanceIncludes.cpp" />
+    <ClCompile Include="MyLib\Utilities\GameObjectStructures\GameObjectManager\ObjectManager.cpp" />
+    <ClCompile Include="MyLib\Utilities\GameObjectStructures\GameObject\GameObject.cpp" />
+    <ClCompile Include="MyLib\Utilities\GlobalVariablesStructures\GlobalVariables.cpp" />
+    <ClCompile Include="MyLib\Utilities\LightStructures\LightInstance.cpp" />
+    <ClCompile Include="MyLib\Utilities\LightStructures\LightBehavior.cpp" />
+    <ClCompile Include="MyLib\Utilities\LightStructures\Sun.cpp" />
+    <ClCompile Include="MyLib\Utilities\ModellObjectStructures\ModelObject.cpp" />
+    <ClCompile Include="MyLib\Utilities\MouseStructures\DebugMouseInstance.cpp" />
+    <ClCompile Include="MyLib\Utilities\MouseStructures\MouseBehavior.cpp" />
+    <ClCompile Include="MyLib\Utilities\MouseStructures\TransformDebugMouse.cpp" />
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\PrimitiveClass.cpp" />
+    <ClCompile Include="MyLib\Utilities\ResourceStructures\MapModels.cpp" />
+    <ClCompile Include="MyLib\Utilities\ResourceStructures\ResourceInstance.cpp" />
+    <ClCompile Include="MyLib\Utilities\ResourceStructures\MapTextures.cpp" />
+    <ClCompile Include="MyLib\EngineCore\DirectXCommon\DxCommon.cpp" />
+    <ClCompile Include="MyLib\EngineCore\Input\Input.cpp" />
+    <ClCompile Include="MyLib\EngineCore\LeakChecker\LeakChecker.cpp" />
+    <ClCompile Include="MyLib\EngineCore\Light\DirectionalLight.cpp" />
+    <ClCompile Include="MyLib\EngineCore\Light\LightBasics.cpp" />
+    <ClCompile Include="MyLib\EngineCore\Model\ModelData\ModelData.cpp" />
+    <ClCompile Include="MyLib\EngineCore\PipelineSet\PipelineSet.cpp" />
+    <ClCompile Include="MyLib\EngineCore\Sound\ExternalSoundLoader.cpp" />
+    <ClCompile Include="MyLib\EngineCore\Sound\Sound.cpp" />
+    <ClCompile Include="MyLib\EngineCore\Texture\MyTexture.cpp" />
+    <ClCompile Include="MyLib\EngineCore\VPShaderTable\VPShaderTable.cpp" />
+    <ClCompile Include="MyLib\NoviceLike\NoviceLike.cpp" />
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\QuadBehavior.cpp" />
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Sprite\Sprite.cpp" />
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Quad\Quad.cpp" />
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\TriangleBehavior.cpp" />
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\Triangle\Triangle.cpp" />
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\Tetrahedra\TetrahedraBehavior.cpp" />
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\Tetrahedra\DisjointedTetrahedra\DisjointedTetrahedra.cpp" />
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\UnitSphereMesh\UnitSphere\UnitSphere.cpp" />
+    <ClCompile Include="MyLib\Utilities\SceneStructures\SceneBehavior.cpp" />
+    <ClCompile Include="MyLib\Utilities\CubeForModelStructures\SimpleBone.cpp" />
+    <ClCompile Include="ExclusiveCodes\Characters\SampleCharactor\SampleCharacter.cpp" />
+    <ClCompile Include="ExclusiveCodes\GameObjects\Player\Player.cpp" />
+    <ClCompile Include="ExclusiveCodes\Camera\SampleCamera\SampleCamera.cpp" />
+    <ClCompile Include="ExclusiveCodes\Effect\Particle\Particle.cpp" />
+    <ClCompile Include="ExclusiveCodes\Effect\Particle\ParticleEmitter.cpp" />
+    <ClCompile Include="ExclusiveCodes\Utilities\SoheStructures.cpp" />
+    <ClCompile Include="ExclusiveCodes\InGameController\InGameController.cpp" />
+    <ClCompile Include="ExclusiveCodes\Scenes\GameScene\GameScene.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\InGameMapBehavior.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map0\Map0.cpp" />
+    <ClCompile Include="ExclusiveCodes\Scenes\TitleScene\TitleScene.cpp" />
+    <ClCompile Include="ExclusiveCodes\Scenes\EndScene\EndScene.cpp" />
+    <ClCompile Include="ExclusiveCodes\Camera\GameCamera\GameCamera.cpp" />
+    <ClCompile Include="ExclusiveCodes\GameObjects\DirectionalArrow\DirectionalArrow.cpp" />
+    <ClCompile Include="ExclusiveCodes\GameObjects\MovableField\MovableField.cpp" />
+    <ClCompile Include="ExclusiveCodes\Characters\RobotChara\RobotChara.cpp" />
+    <ClCompile Include="ExclusiveCodes\UI\UI.cpp" />
+    <ClCompile Include="ExclusiveCodes\InGameMouse\InGameMouse.cpp" />
+    <ClCompile Include="ExclusiveCodes\GameObjects\Card\Card.cpp" />
+    <ClCompile Include="ExclusiveCodes\GameObjects\Key\Key.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\SampleSceneMap\SampleSceneMap.cpp" />
+    <ClCompile Include="ExclusiveCodes\GameObjects\DirectionalArrow\ArrowClickArea.cpp" />
+    <ClCompile Include="ExclusiveCodes\UI\Button\Button.cpp" />
+    <ClCompile Include="ExclusiveCodes\Fade\Fade.cpp" />
+    <ClCompile Include="ExclusiveCodes\GameObjects\Card\CardManager.cpp" />
+    <ClCompile Include="ExclusiveCodes\GameObjects\DirectionalArrow\ArrowClickAreaManager.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map1\Map1.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map2\Map2.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map4\Map4.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map3\Map3.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map5\Map5.cpp" />
+    <ClCompile Include="ExclusiveCodes\Scenes\ModelDebugScene\ModelDebugScene.cpp" />
+    <ClCompile Include="ExclusiveCodes\GameObjects\DirectionalArrow\PredictiveArrow.cpp" />
+    <ClCompile Include="ExclusiveCodes\GameObjects\Card\PredictiveCardUI.cpp" />
+    <ClCompile Include="ExclusiveCodes\Utilities\SoheEasing.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map6\Map6.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map7\Map7.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map8\Map8.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map9\Map9.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map10\Map10.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map11\Map11.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map12\Map12.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map13\Map13.cpp" />
+    <ClCompile Include="ExclusiveCodes\Map\Map14\Map14.cpp" />
+    <ClCompile Include="ExclusiveCodes\Scenes\StageSelectScene\StageSelectScene.cpp" />
+    <ClCompile Include="ExclusiveCodes\GameObjects\SelectStar\SelectStar.cpp" />
+    <ClCompile Include="ExclusiveCodes\Characters\KeyCharacter\KeyCahracter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ExclusiveCodes\Audio\AudioHandle.h" />
+    <ClInclude Include="ExclusiveCodes\Audio\AudioManager.h" />
+    <ClInclude Include="ExclusiveCodes\Audio\AudioPlayer.h" />
+    <ClInclude Include="ExclusiveCodes\Characters\CharacterBehavior.h" />
+    <ClInclude Include="ExclusiveCodes\GameObjects\Goal\Goal.h" />
+    <ClInclude Include="ExclusiveCodes\Characters\GoalCharacter\GoalCharacter.h" />
+    <ClInclude Include="ExclusiveCodes\Characters\NormalBlockCharacter\NormalBlockCharacter.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Chip\ChipBehavior.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Chip\NormalBlock\NormalBlock.h" />
+    <ClInclude Include="ExclusiveCodes\Map\InGameMapBehavior.h" />
+    <ClInclude Include="ExclusiveCodes\Audio\MediaAudioDecoder.h" />
+    <ClInclude Include="ExclusiveCodes\GameObjects\MovableBlock\MovableBlock.h" />
+    <ClInclude Include="ExclusiveCodes\InGameController\InGameController.h" />
+    <ClInclude Include="ExclusiveCodes\Scenes\GameScene\GameScene.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map0\Map0.h" />
+    <ClInclude Include="MyLib\Utilities\CubeForModelStructures\CubeForModel.h" />
+    <ClInclude Include="MyLib\Utilities\CatmullStructures\CatmullSample.h" />
+    <ClInclude Include="MyLib\Utilities\SceneStructures\DebugScene\DebugScene.h" />
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Cube\DisjointedCube\DisjointedCube.h" />
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Cube\JointedCube\JointedCube.h" />
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Cube\CubeBehavior.h" />
+    <ClInclude Include="External\imgui\imconfig.h" />
+    <ClInclude Include="External\imgui\imgui.h" />
+    <ClInclude Include="External\imgui\imgui_impl_dx12.h" />
+    <ClInclude Include="External\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="External\imgui\imgui_internal.h" />
+    <ClInclude Include="External\imgui\imstb_rectpack.h" />
+    <ClInclude Include="External\imgui\imstb_textedit.h" />
+    <ClInclude Include="External\imgui\imstb_truetype.h" />
+    <ClInclude Include="MyLib\Utilities\SceneStructures\DebugScene\DebugSceneAssets.h" />
+    <ClInclude Include="MyLib\EngineCore\FPSControll\FPSController.h" />
+    <ClInclude Include="MyLib\EngineCore\Input\Input.h" />
+    <ClInclude Include="MyLib\EngineCore\Mesh\Mesh.h" />
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\BaseClass.h" />
+    <ClInclude Include="MyLib\Utilities\BenriFunctionStructures\BenriFunctions.h" />
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\Material\Material.h" />
+    <ClInclude Include="MyLib\Utilities\EasingFuctionStructures\EasingFunctions.h" />
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\Physic\Physics.h" />
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\PrimitiveShape\PrimitiveShape.h" />
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\Quaternion\Quaternion.h" />
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\Segment\Segment.h" />
+    <ClInclude Include="MyLib\Utilities\CounterStructures\CounterAndTime.h" />
+    <ClInclude Include="MyLib\Utilities\CounterStructures\TimedCall.h" />
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\Transform\Transform.h" />
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\VectorAndMatrix\VectorAndMatrix.h" />
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\VertexData\VertexData.h" />
+    <ClInclude Include="MyLib\Utilities\CameraStructures\CameraBehavior.h" />
+    <ClInclude Include="MyLib\Utilities\CameraStructures\DebugCameraInstances.h" />
+    <ClInclude Include="MyLib\Utilities\CameraStructures\SimpleDebugCamera.h" />
+    <ClInclude Include="MyLib\Utilities\CameraStructures\SphericalDebugCamera.h" />
+    <ClInclude Include="MyLib\Utilities\CatmullStructures\CatmullBehavior.h" />
+    <ClInclude Include="MyLib\Utilities\CollisionDetectionsStructures\CollisionDetection.h" />
+    <ClInclude Include="MyLib\Utilities\DebugUIStructures\DebugUI.h" />
+    <ClInclude Include="MyLib\EngineCore\EngineInstances\EngineAssets.h" />
+    <ClInclude Include="MyLib\Utilities\EssentialInstanceIncludes.h" />
+    <ClInclude Include="MyLib\Utilities\GameObjectStructures\GameObjectManager\ObjectManager.h" />
+    <ClInclude Include="MyLib\Utilities\GameObjectStructures\GameObject\GameObject.h" />
+    <ClInclude Include="MyLib\Utilities\GlobalVariablesStructures\GlobalVariables.h" />
+    <ClInclude Include="MyLib\Utilities\LightStructures\LightInstance.h" />
+    <ClInclude Include="MyLib\Utilities\LightStructures\LightBehavior.h" />
+    <ClInclude Include="MyLib\Utilities\LightStructures\Sun.h" />
+    <ClInclude Include="MyLib\Utilities\ModellObjectStructures\ModelObject.h" />
+    <ClInclude Include="MyLib\Utilities\MouseStructures\DebugMouseInstance.h" />
+    <ClInclude Include="MyLib\Utilities\MouseStructures\MouseBehavior.h" />
+    <ClInclude Include="MyLib\Utilities\MouseStructures\TransformDebugMouse.h" />
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\PrimitiveClass.h" />
+    <ClInclude Include="MyLib\Utilities\ResourceStructures\MapModels.h" />
+    <ClInclude Include="MyLib\Utilities\ResourceStructures\ResourceInstance.h" />
+    <ClInclude Include="MyLib\Utilities\ResourceStructures\MapTextures.h" />
+    <ClInclude Include="MyLib\EngineCore\DirectXCommon\DxCommon.h" />
+    <ClInclude Include="MyLib\EngineCore\Light\DirectionalLight.h" />
+    <ClInclude Include="MyLib\EngineCore\Light\LightBasics.h" />
+    <ClInclude Include="MyLib\EngineCore\LogAndException\AboutDebugLog.h" />
+    <ClInclude Include="MyLib\EngineCore\LogAndException\AboutException.h" />
+    <ClInclude Include="MyLib\EngineCore\Mesh\MappedResource.h" />
+    <ClInclude Include="MyLib\EngineCore\Mesh\PrimitiveMesh.h" />
+    <ClInclude Include="MyLib\EngineCore\Model\Model.h" />
+    <ClInclude Include="MyLib\EngineCore\Model\ModelData\ModelData.h" />
+    <ClInclude Include="MyLib\EngineCore\LeakChecker\LeakChecker.h" />
+    <ClInclude Include="MyLib\EngineCore\PipelineSet\PipelineSet.h" />
+    <ClInclude Include="MyLib\EngineCore\Sound\ExternalSoundLoader.h" />
+    <ClInclude Include="MyLib\EngineCore\Sound\Sound.h" />
+    <ClInclude Include="MyLib\EngineCore\Texture\MyTexture.h" />
+    <ClInclude Include="MyLib\EngineCore\VPShaderTable\VPShaderTable.h" />
+    <ClInclude Include="MyLib\NoviceLike\NoviceLike.h" />
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\QuadBehavior.h" />
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Sprite\Sprite.h" />
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Quad\Quad.h" />
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\TriangleBehavior.h" />
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\Triangle\Triangle.h" />
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\Tetrahedra\TetrahedraBehavior.h" />
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\Tetrahedra\DisjointedTetrahedra\DisjointedTetrahedra.h" />
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\UnitSphereMesh\UnitSphere\UnitSphere.h" />
+    <ClInclude Include="MyLib\Utilities\SceneStructures\SceneBehavior.h" />
+    <ClInclude Include="MyLib\Utilities\CubeForModelStructures\SimpleBone.h" />
+    <ClInclude Include="ExclusiveCodes\Characters\SampleCharactor\SampleCharacter.h" />
+    <ClInclude Include="ExclusiveCodes\GameObjects\Player\Player.h" />
+    <ClInclude Include="ExclusiveCodes\Camera\SampleCamera\SampleCamera.h" />
+    <ClInclude Include="ExclusiveCodes\Effect\Particle\Particle.h" />
+    <ClInclude Include="ExclusiveCodes\Effect\Particle\ParticleEmitter.h" />
+    <ClInclude Include="ExclusiveCodes\Utilities\SoheStructures.h" />
+    <ClInclude Include="ExclusiveCodes\InGameController\InGameController.h" />
+    <ClInclude Include="ExclusiveCodes\Scenes\GameScene\GameScene.h" />
+    <ClInclude Include="ExclusiveCodes\Map\InGameMapBehavior.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map0\Map0.h" />
+    <ClInclude Include="ExclusiveCodes\Scenes\TitleScene\TitleScene.h" />
+    <ClInclude Include="ExclusiveCodes\Scenes\EndScene\EndScene.h" />
+    <ClInclude Include="ExclusiveCodes\Camera\GameCamera\GameCamera.h" />
+    <ClInclude Include="ExclusiveCodes\GameObjects\DirectionalArrow\DirectionalArrow.h" />
+    <ClInclude Include="ExclusiveCodes\GameObjects\MovableField\MovableField.h" />
+    <ClInclude Include="ExclusiveCodes\Map\MapIncluder.h" />
+    <ClInclude Include="ExclusiveCodes\Characters\RobotChara\RobotChara.h" />
+    <ClInclude Include="ExclusiveCodes\UI\UI.h" />
+    <ClInclude Include="ExclusiveCodes\GameObjects\Card\Card.h" />
+    <ClInclude Include="ExclusiveCodes\Map\MapIncluder.h" />
+    <ClInclude Include="ExclusiveCodes\Characters\RobotChara\RobotChara.h" />
+    <ClInclude Include="ExclusiveCodes\UI\UI.h" />
+    <ClInclude Include="ExclusiveCodes\GameObjects\Key\Key.h" />
+    <ClInclude Include="ExclusiveCodes\InGameMouse\InGameMouse.h" />
+    <ClInclude Include="ExclusiveCodes\Map\SampleSceneMap\SampleSceneMap.h" />
+    <ClInclude Include="ExclusiveCodes\GameObjects\DirectionalArrow\ArrowClickArea.h" />
+    <ClInclude Include="ExclusiveCodes\UI\Button\Button.h" />
+    <ClInclude Include="ExclusiveCodes\Fade\Fade.h" />
+    <ClInclude Include="ExclusiveCodes\GameObjects\Card\CardManager.h" />
+    <ClInclude Include="ExclusiveCodes\GameObjects\DirectionalArrow\ArrowClickAreaManager.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map1\Map1.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map2\Map2.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map4\Map4.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map3\Map3.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map5\Map5.h" />
+    <ClInclude Include="ExclusiveCodes\Scenes\ModelDebugScene\ModelDebugScene.h" />
+    <ClInclude Include="ExclusiveCodes\GameObjects\DirectionalArrow\PredictiveArrow.h" />
+    <ClInclude Include="ExclusiveCodes\GameObjects\Card\PredictiveCardUI.h" />
+    <ClInclude Include="ExclusiveCodes\Utilities\SoheEasing.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map6\Map6.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map7\Map7.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map8\Map8.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map9\Map9.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map10\Map10.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map11\Map11.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map12\Map12.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map13\Map13.h" />
+    <ClInclude Include="ExclusiveCodes\Map\Map14\Map14.h" />
+    <ClInclude Include="ExclusiveCodes\Scenes\StageSelectScene\StageSelectScene.h" />
+    <ClInclude Include="ExclusiveCodes\GameObjects\SelectStar\SelectStar.h" />
+    <ClInclude Include="ExclusiveCodes\Characters\KeyCharacter\KeyCharacter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="External\imgui\imgui.vcxproj" />
+    <None Include="External\imgui\imgui.vcxproj.filters" />
+    <None Include="NewFolder1\dxcompiler.dll" />
+    <None Include="NewFolder1\dxil.dll" />
+    <None Include="Resource\blocks.csv" />
+    <None Include="Resource\MapCsvFiles\map0.csv" />
+    <None Include="Resource\MapCsvFiles\souheiMap.csv" />
+    <None Include="Resource\MapCsvFiles\map1.csv" />
+    <None Include="Resource\MapCsvFiles\map2.csv" />
+    <None Include="Resource\MapCsvFiles\map3.csv" />
+    <None Include="Resource\MapCsvFiles\map4.csv" />
+    <None Include="Resource\MapCsvFiles\map5.csv" />
+    <None Include="Resource\MapCsvFiles\map6.csv" />
+    <None Include="Resource\MapCsvFiles\map7.csv" />
+    <None Include="Resource\MapCsvFiles\map8.csv" />
+    <None Include="Resource\MapCsvFiles\map9.csv" />
+    <None Include="Resource\MapCsvFiles\map10.csv" />
+    <None Include="Resource\MapCsvFiles\map11.csv" />
+    <None Include="Resource\MapCsvFiles\map12.csv" />
+    <None Include="Resource\MapCsvFiles\map13.csv" />
+    <None Include="Resource\MapCsvFiles\map14.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\CameraStructures\CameraBehavior.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\CameraStructures\DebugCameraInstances.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\CameraStructures\SimpleDebugCamera.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\CameraStructures\SphericalDebugCamera.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\CatmullStructures\CatmullBehavior.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\CollisionDetectionsStructures\CollisionDetection.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\BenriFunctionStructures\BenriFunctions.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\Material\Material.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\Physic\Physics.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\PrimitiveShape\PrimitiveShape.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\Quaternion\Quaternion.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\Segment\Segment.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\CounterStructures\CounterAndTime.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\CounterStructures\TimedCall.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\Transform\Transform.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\VectorAndMatrix\VectorAndMatrix.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\BaseClass.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\DebugUIStructures\DebugUI.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\EngineCore\EngineInstances\EngineAssets.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\GameObjectStructures\GameObject\GameObject.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\GameObjectStructures\GameObjectManager\ObjectManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\GlobalVariablesStructures\GlobalVariables.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\LightStructures\LightInstance.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\LightStructures\LightBehavior.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\LightStructures\Sun.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\ModellObjectStructures\ModelObject.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\MouseStructures\DebugMouseInstance.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\MouseStructures\MouseBehavior.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\MouseStructures\TransformDebugMouse.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\PrimitiveClass.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\EssentialInstanceIncludes.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\NoviceLike\NoviceLike.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\EngineCore\Texture\MyTexture.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\EngineCore\Sound\ExternalSoundLoader.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\EngineCore\Sound\Sound.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\EngineCore\Model\ModelData\ModelData.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\EngineCore\Light\DirectionalLight.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\EngineCore\Light\LightBasics.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\EngineCore\DirectXCommon\DxCommon.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="External\imgui\imgui.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="External\imgui\imgui_demo.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="External\imgui\imgui_draw.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="External\imgui\imgui_impl_dx12.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="External\imgui\imgui_impl_win32.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="External\imgui\imgui_tables.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="External\imgui\imgui_widgets.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\BaseClassStructures\VertexData\VertexData.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\ResourceStructures\MapModels.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\ResourceStructures\ResourceInstance.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\ResourceStructures\MapTextures.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\EngineCore\LeakChecker\LeakChecker.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\EngineCore\VPShaderTable\VPShaderTable.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\EngineCore\Input\Input.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\EngineCore\PipelineSet\PipelineSet.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\EngineCore\FPSControll\FPSController.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\QuadBehavior.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Sprite\Sprite.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Cube\CubeBehavior.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Quad\Quad.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Cube\JointedCube\JointedCube.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Cube\DisjointedCube\DisjointedCube.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\TriangleBehavior.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\Triangle\Triangle.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\Tetrahedra\TetrahedraBehavior.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\Tetrahedra\DisjointedTetrahedra\DisjointedTetrahedra.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\PrimitiveStructures\UnitSphereMesh\UnitSphere\UnitSphere.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\SceneStructures\SceneBehavior.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\SceneStructures\DebugScene\DebugScene.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\SceneStructures\DebugScene\DebugSceneAssets.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\CatmullStructures\CatmullSample.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\CubeForModelStructures\SimpleBone.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="MyLib\Utilities\CubeForModelStructures\CubeForModel.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ExclusiveCodes\Characters\SampleCharactor\SampleCharacter.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ExclusiveCodes\Characters\CharacterBehavior.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ExclusiveCodes\Camera\SampleCamera\SampleCamera.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ExclusiveCodes\Audio\AudioManager.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ExclusiveCodes\Audio\AudioPlayer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ExclusiveCodes\Audio\MediaAudioDecoder.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ExclusiveCodes\Audio\AudioHandle.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ExclusiveCodes\Effect\Particle\Particle.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ExclusiveCodes\Effect\Particle\ParticleEmitter.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ExclusiveCodes\Utilities\SoheStructures.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ExclusiveCodes\Map\Chip\NormalBlock\NormalBlock.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ExclusiveCodes\Map\Chip\ChipBehavior.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ExclusiveCodes\Characters\NormalBlockCharacter\NormalBlockCharacter.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ExclusiveCodes\Characters\GoalCharacter\GoalCharacter.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyLib\Utilities\CameraStructures\SphericalDebugCamera.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\CameraStructures\CameraBehavior.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\CameraStructures\DebugCameraInstances.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\CameraStructures\SimpleDebugCamera.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\CatmullStructures\CatmullBehavior.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\CollisionDetectionsStructures\CollisionDetection.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\BenriFunctionStructures\BenriFunctions.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\Material\Material.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\Physic\Physics.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\PrimitiveShape\PrimitiveShape.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\Quaternion\Quaternion.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\Segment\Segment.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\CounterStructures\CounterAndTime.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\CounterStructures\TimedCall.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\Transform\Transform.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\VectorAndMatrix\VectorAndMatrix.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\BaseClass.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\EasingFuctionStructures\EasingFunctions.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\DebugUIStructures\DebugUI.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\EngineInstances\EngineAssets.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\GameObjectStructures\GameObject\GameObject.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\GameObjectStructures\GameObjectManager\ObjectManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\GlobalVariablesStructures\GlobalVariables.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\LightStructures\LightInstance.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\LightStructures\LightBehavior.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\LightStructures\Sun.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\ModellObjectStructures\ModelObject.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\MouseStructures\DebugMouseInstance.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\MouseStructures\MouseBehavior.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\MouseStructures\TransformDebugMouse.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\PrimitiveClass.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\EssentialInstanceIncludes.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\NoviceLike\NoviceLike.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\Texture\MyTexture.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\LeakChecker\LeakChecker.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\Sound\ExternalSoundLoader.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\Sound\Sound.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\Model\ModelData\ModelData.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\LogAndException\AboutException.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\LogAndException\AboutDebugLog.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\Light\DirectionalLight.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\Light\LightBasics.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\DirectXCommon\DxCommon.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="External\imgui\imconfig.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="External\imgui\imgui.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="External\imgui\imgui_impl_dx12.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="External\imgui\imgui_impl_win32.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="External\imgui\imgui_internal.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="External\imgui\imstb_rectpack.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="External\imgui\imstb_textedit.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="External\imgui\imstb_truetype.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\BaseClassStructures\VertexData\VertexData.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\ResourceStructures\MapModels.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\ResourceStructures\ResourceInstance.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\ResourceStructures\MapTextures.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\Mesh\MappedResource.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\Mesh\Mesh.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\Model\Model.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\Input\Input.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\VPShaderTable\VPShaderTable.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\PipelineSet\PipelineSet.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\Mesh\PrimitiveMesh.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\EngineCore\FPSControll\FPSController.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\QuadBehavior.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Sprite\Sprite.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Cube\CubeBehavior.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Quad\Quad.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Cube\JointedCube\JointedCube.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\QuadMesh\QuadBehavior\Cube\DisjointedCube\DisjointedCube.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\TriangleBehavior.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\Triangle\Triangle.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\Tetrahedra\TetrahedraBehavior.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\TriangleMesh\Tetrahedra\DisjointedTetrahedra\DisjointedTetrahedra.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\PrimitiveStructures\UnitSphereMesh\UnitSphere\UnitSphere.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\SceneStructures\SceneBehavior.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\SceneStructures\DebugScene\DebugScene.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\SceneStructures\DebugScene\DebugSceneAssets.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\CatmullStructures\CatmullSample.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\CubeForModelStructures\SimpleBone.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MyLib\Utilities\CubeForModelStructures\CubeForModel.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExclusiveCodes\Characters\SampleCharactor\SampleCharacter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExclusiveCodes\Characters\CharacterBehavior.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExclusiveCodes\Camera\SampleCamera\SampleCamera.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExclusiveCodes\Audio\AudioManager.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExclusiveCodes\Audio\AudioPlayer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExclusiveCodes\Audio\MediaAudioDecoder.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExclusiveCodes\Audio\AudioHandle.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExclusiveCodes\Effect\Particle\Particle.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExclusiveCodes\Effect\Particle\ParticleEmitter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExclusiveCodes\Utilities\SoheStructures.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExclusiveCodes\Map\Chip\NormalBlock\NormalBlock.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExclusiveCodes\Map\Chip\ChipBehavior.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExclusiveCodes\Characters\NormalBlockCharacter\NormalBlockCharacter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ExclusiveCodes\Characters\GoalCharacter\GoalCharacter.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resource\TestImage\player128x128.png" />
+    <Image Include="Resource\Images\1_128x128.png" />
+    <Image Include="Resource\Images\2_128x128.png" />
+    <Image Include="Resource\Images\3_128x128.png" />
+    <Image Include="Resource\Images\frame800x256.png" />
+  </ItemGroup>
+</Project>
