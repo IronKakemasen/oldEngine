@@ -86,7 +86,6 @@ struct DxCommon
 	D3D12_CPU_DESCRIPTOR_HANDLE rtvHandles[2];
 	D3D12_CPU_DESCRIPTOR_HANDLE dsvHandle;
 
-
 	//[ DescriptorHeap ]
 	Microsoft::WRL::ComPtr<ID3D12DescriptorHeap> rtvDescriptorHeap = nullptr;
 	Microsoft::WRL::ComPtr<ID3D12DescriptorHeap> srvDescriptorHeap = nullptr;
@@ -189,7 +188,7 @@ struct DxCommon
 	//BufferResource(example: VertexBuffer,constantbuffer)を作る関数
 	Microsoft::WRL::ComPtr<ID3D12Resource> CreateBufferResource(UINT sizeInByte_);
 	//textureデータを転送する関数
-	[[nodiscard]]
+	
 	Microsoft::WRL::ComPtr<ID3D12Resource> UploadtextureData(Microsoft::WRL::ComPtr<ID3D12Resource> texture_, DirectX::ScratchImage const& mipImages_);
 	//ShaderResourceViewDescの生成(とりま適当引数)
 	D3D12_SHADER_RESOURCE_VIEW_DESC CreateSRVDesc(DXGI_FORMAT metaDataFormat_, size_t mipLevels_);

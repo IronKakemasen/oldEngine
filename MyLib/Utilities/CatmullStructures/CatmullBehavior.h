@@ -20,7 +20,6 @@ struct CatmullBehavior
 	float dt = 0.25f;
 	float kNumModel = (1.0f / dt) * (numCorners + 3.0f);
 
-
 	virtual void Update(Matrix4 vpMat_) = 0;
 	virtual void Draw() = 0;
 	virtual void Initialize() = 0;

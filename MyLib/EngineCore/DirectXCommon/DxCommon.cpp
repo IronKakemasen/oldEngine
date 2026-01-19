@@ -1336,7 +1336,6 @@ uint16_t DxCommon::CreateOS_Set()
 	//Textureを読み込む
 	offScreenSet.emplace_back(GetOS_TextureData(device.Get()));
 
-
 	//SRV上の番地
 	offScreenSet[OSResourceData::NumOSResource].textureHandle =
 	{
@@ -1479,7 +1478,7 @@ void DxCommon::SetCameraPos(Vector3 cameraWorld_)
 void DxCommon::BeginFrame(BYTE* key, DIMOUSESTATE* mouseState_)
 {
 	time += deltaTime;
-	commonVariablesData->time = time;
+	commonVariablesData->time += deltaTime;
 
 	//キーボード情報の取得
 	inputs.keyboard->Acquire();

@@ -28,6 +28,9 @@ void Sprite::Update(Matrix4 vpMat_)
 
 	trans.SetUVMat();
 	trans.SetWorldMatBasedQuaternion();
+
+	auto m = Get_Orthographic3D(0.0f, WINDOW_W, 0.0f, WINDOW_H);
+
 	trans.SetWVP_Mat(Get_Orthographic3D(0.0f, WINDOW_W, 0.0f, WINDOW_H));
 
 }
