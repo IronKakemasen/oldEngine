@@ -69,7 +69,7 @@ Microsoft::WRL::ComPtr<ID3D12Resource>  CreateTextureResource(ID3D12Device* devi
 }
 
 //読み込んだTextureの情報をもとにTextureResourceを作る関数
-Microsoft::WRL::ComPtr<ID3D12Resource>  CreateTextureResource(ID3D12Device* device_)
+Microsoft::WRL::ComPtr<ID3D12Resource> CreateTextureResource(ID3D12Device* device_)
 {
 	D3D12_RESOURCE_DESC resourceDesc{};
 
@@ -90,7 +90,6 @@ Microsoft::WRL::ComPtr<ID3D12Resource>  CreateTextureResource(ID3D12Device* devi
 	resourceDesc.Dimension = D3D12_RESOURCE_DIMENSION(3);
 	resourceDesc.Flags = D3D12_RESOURCE_FLAG_ALLOW_RENDER_TARGET;
 
-	//D3D12_RESOURCE_FLAG_ALLOW_RENDER_TARGET
 	//[ 利用するHeapの設定 ]
 	//細かい設定を行う
 	D3D12_HEAP_PROPERTIES heapProperties{};
@@ -140,7 +139,6 @@ OSResourceData GetOS_TextureData(ID3D12Device* device_)
 {
 	OSResourceData ret_textureResourceData;
 	ret_textureResourceData.textureResource = CreateTextureResource(device_);
-	//ret_textureResourceData.textureResource->SetName(L"Post");
 
 	return ret_textureResourceData;
 

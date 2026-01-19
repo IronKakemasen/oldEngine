@@ -16,10 +16,11 @@ struct Mesh
 	D3D12_INDEX_BUFFER_VIEW indexBufferView{};
 	// 頂点バッファマップ
 	VertexData* vertexMap = nullptr;
-	// 頂点バッファマップ(Line用)
-	Vector3* vertexMapForLine = nullptr;
 	// インデックスバッファマップ
 	uint32_t* indexMap = nullptr;
+
+	// 頂点バッファマップ(Line用)
+	Vector3* vertexMapForLine = nullptr;
 
 	std::vector< MappedResource >mappedResource;
 

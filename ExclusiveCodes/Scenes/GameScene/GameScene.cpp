@@ -257,7 +257,6 @@ void GameScene::Render()
     //現在マップの描画
     inGameController->stages[inGameController->currentStageNo]->Draw();
 
-
     predictiveCardUI->Draw();
 
     // 矢印の描画

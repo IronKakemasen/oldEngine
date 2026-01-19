@@ -16,7 +16,6 @@ void SphericalDebugCamera::Update()
 	if (NoviceLike::keys[DIK_O])sphericalCoordinates.x -= speed * 0.025f;
 	if (NoviceLike::keys[DIK_K])sphericalCoordinates.x += speed * 0.025f;
 
-
 	sphericalCoordinates.z = std::clamp(sphericalCoordinates.z, -179.5f, -0.5f);
 
 	Vector3 buff = { sphericalCoordinates.x,GetRadian(sphericalCoordinates.y),
@@ -50,7 +49,6 @@ void SphericalDebugCamera::Debug()
 	}
 
 }
-
 
 SphericalDebugCamera::SphericalDebugCamera()
 {

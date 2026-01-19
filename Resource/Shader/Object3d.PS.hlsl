@@ -51,8 +51,8 @@ PixcelShaderOutput main(VertexShaderOutput input)
         float3 diffuse = gMaterial.color.rgb * textureColor.rgb * gDirectionalLight.color.rgb *
         cos * gDirectionalLight.intensity;
 
-        float3 specular = gDirectionalLight.color.rgb * gDirectionalLight.intensity * specularPow * float3(1, 1, 1);
-        output.color.rgb = diffuse + specular;
+        //float3 specular = gDirectionalLight.color.rgb * gDirectionalLight.intensity * specularPow * float3(1, 1, 1);
+        //output.color.rgb = diffuse + specular;
         
         //output.color.rgb = gMaterial.color.rgb * textureColor.rgb * gDirectionalLight.color.rgb * cos * gDirectionalLight.intensity;
         output.color.a = gMaterial.color.a * textureColor.a;
@@ -63,6 +63,7 @@ PixcelShaderOutput main(VertexShaderOutput input)
         
         float3 diffuse = gMaterial.color.rgb * textureColor.rgb * gDirectionalLight.color.rgb *
         cos * gDirectionalLight.intensity;
+        
         float3 specular = gDirectionalLight.color.rgb * gDirectionalLight.intensity * specularPow * float3(1, 1, 1);
 
         //output.color.rgb = gMaterial.color.rgb * textureColor.rgb * gDirectionalLight.color.rgb * cos * gDirectionalLight.intensity;
